@@ -3,48 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="veganos.css">
-    <title>Vegano Saboroso</title>
+    <title>Salgados Veganos - Carrinho de Compras</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <h1>Vegano Saboroso</h1>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#receitas">Receitas</a></li>
-                <li><a href="#onde-comprar">Onde Comprar</a></li>
-                <li><a href="#blog">Blog</a></li>
-            </ul>
-        </nav>
+        <img src="https://www.designi.com.br/images/preview/10006042.jpg" alt="Logo Pizzaria" class="logo">
+        <h1>Salgados Veganos</h1>
     </header>
+    <main>
+        <section class="menu">
+            <h2>Nosso Cardápio de Salgados Veganos</h2>
+            <div class="menu-item">
+                <img src="https://i.panelinha.com.br/i1/bk-8514-coxinha-de-cogumelos.webp" alt="Coxinha de cogumelo">
+                <h3>Coxinha de Cogumelo</h3>
+                <p>R$ 12,00</p>
+                <button class="add-to-cart" data-name="Coxinha de Cogumelo" data-price="12.00">Adicionar ao Carrinho</button>
+            </div>
+            <div class="menu-item">
+                <img src="https://sociedadevegan.com/wp-content/uploads/2019/04/receita-rissole-vegan.jpg.jpg" alt="Risólis vegano">
+                <h3>Risólis vegano</h3>
+                <p>R$ 10,00</p>
+                <button class="add-to-cart" data-name="Risólis vegano" data-price="10.00">Adicionar ao Carrinho</button>
+            </div>
+            <div class="menu-item">
+                <img src="https://assets.unileversolutions.com/recipes-v2/168345.jpg" alt="Bolinho de abóbora recheado">
+                <h3>Bolinho de abóbora recheado</h3>
+                <p>R$ 9,00</p>
+                <button class="add-to-cart" data-name="Bolinho de abóbora recheado" data-price="9.00">Adicionar ao Carrinho</button>
+            </div>
+        </section>
 
-    <section id="home">
-        <h2>Bem-vindo ao Vegano Saboroso!</h2>
-        <p>Descubra deliciosos salgados veganos que vão conquistar seu paladar.</p>
-    </section>
-
-    <section id="receitas">
-        <h2>Receitas</h2>
-        <ul>
-            <li>Coxinha de Jaca</li>
-            <li>Pastel de Tofu</li>
-            <li>Quibe Vegano</li>
-        </ul>
-    </section>
-
-    <section id="onde-comprar">
-        <h2>Onde Comprar</h2>
-        <p>Confira nossos pontos de venda em sua cidade!</p>
-    </section>
-
-    <section id="blog">
-        <h2>Blog</h2>
-        <p>Dicas de receitas e nutrição vegana.</p>
-    </section>
+        <section class="cart">
+            <h2>Seu Carrinho</h2>
+            <ul id="cart"></ul>
+            <p>Total: R$ <span id="total">0.00</span></p>
+            <button id="checkoutButton">Finalizar Pedido</button>
+        </section>
+    </main>
 
     <footer>
-        <p>&copy; 2023 Vegano Saboroso. Todos os direitos reservados.</p>
+        <p>&copy; 2024 Salgados Veganos Deliciosos</p>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
